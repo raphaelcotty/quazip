@@ -15,5 +15,6 @@ StaticLibrary {
         cpp.cxxLanguageVersion:"c++14"
         Depends { name: "Qt"; submodules: ["core"] }
         cpp.includePaths: "quazip"
+        cpp.dynamicLibraries: ["z"]
     }
 }
