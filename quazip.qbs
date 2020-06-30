@@ -5,6 +5,8 @@ StaticLibrary {
     Depends { name: "cpp" }
     cpp.cxxLanguageVersion:"c++14"
     Depends { name: "Qt"; submodules: ["core"] }
+    cpp.defines: ["QUAZIP_STATIC"]
+
     files: [
         "quazip/*.h",
         "quazip/*.c",
